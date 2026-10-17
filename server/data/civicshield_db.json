@@ -1,0 +1,549 @@
+{
+  "users": [
+    {
+      "_id": "5ded2b856bf009175f6bba08",
+      "name": "Sarah Jenkins (Citizen)",
+      "email": "citizen@civicshield.gov",
+      "password": "$2b$10$9bMowRpX8xfdoqcmV.TBHuWYaoWwHKaVE4cbHs8Yd.ucdC9qUYI6G",
+      "role": "citizen",
+      "crewDetails": {
+        "department": "General Infrastructure",
+        "vehicleId": "",
+        "phone": "",
+        "isAvailable": true
+      },
+      "createdAt": "2026-10-17T07:43:46.093Z",
+      "updatedAt": "2026-10-17T07:43:46.093Z"
+    },
+    {
+      "_id": "7dd441de0c725c69dc49ba5a",
+      "name": "Carlos Rivera (Electrical Safety)",
+      "email": "crew@civicshield.gov",
+      "password": "$2b$10$9Wp41U5kRf.3NY4sZcEVq./1JYp2254ZOR1boAzFPNV7l9QMQ9i2m",
+      "role": "crew",
+      "crewDetails": {
+        "department": "Electrical Safety & Grid Ops",
+        "vehicleId": "TRUCK-E1",
+        "phone": "555-0144",
+        "isAvailable": true
+      },
+      "createdAt": "2026-10-17T07:43:46.165Z",
+      "updatedAt": "2026-10-17T07:43:46.165Z"
+    },
+    {
+      "_id": "1438faa54745260a4e780540",
+      "name": "Marcus Thorne (Roads & Water)",
+      "email": "crew2@civicshield.gov",
+      "password": "$2b$10$MFMDhaIftmdBYRBrmg8P6O/cV1bIVBULrja375.wK2SskKaNqDEEm",
+      "role": "crew",
+      "crewDetails": {
+        "department": "Roads, Asphalt & Drainage",
+        "vehicleId": "UNIT-R4",
+        "phone": "555-0188",
+        "isAvailable": true
+      },
+      "createdAt": "2026-10-17T07:43:46.235Z",
+      "updatedAt": "2026-10-17T07:43:46.235Z"
+    },
+    {
+      "_id": "821497655e6d3b7d9d21d723",
+      "name": "Director Elena Vance (Municipal Ops)",
+      "email": "admin@civicshield.gov",
+      "password": "$2b$10$FV4F1hr0xCM2pHBRGFPiD.uYWvTtNa/.8/o0j9L3vvI09cHf27pUW",
+      "role": "admin",
+      "crewDetails": {
+        "department": "General Infrastructure",
+        "vehicleId": "",
+        "phone": "",
+        "isAvailable": true
+      },
+      "createdAt": "2026-10-17T07:43:46.308Z",
+      "updatedAt": "2026-10-17T07:43:46.308Z"
+    }
+  ],
+  "incidents": [
+    {
+      "_id": "f94d40f695e0e9577f618d1e",
+      "incidentId": "CS-2026-1007",
+      "title": "Private Residential Driveway Paver Settling",
+      "category": "Other",
+      "description": "Driveway bricks sunk 2 inches inside private garage approach.",
+      "urgency": "Low",
+      "address": "221B Baker Street",
+      "landmark": "Private Garage",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.44,
+          37.77
+        ]
+      },
+      "photos": [],
+      "reporter": "5ded2b856bf009175f6bba08",
+      "reporterName": "Sarah Jenkins (Citizen)",
+      "assignedCrew": null,
+      "status": "Rejected",
+      "rejectionReason": "Private property defect outside municipal public right-of-way jurisdiction. Homeowner referred to private contractors.",
+      "verification": {
+        "verifiedAt": null,
+        "verifiedBy": null,
+        "notes": "",
+        "confirmedHazardLevel": "",
+        "onSitePhotos": []
+      },
+      "resolution": {
+        "resolvedAt": null,
+        "resolvedBy": null,
+        "notes": "",
+        "resolutionPhotos": []
+      },
+      "createdAt": "2026-10-17T07:43:46.319Z",
+      "updatedAt": "2026-10-17T07:43:46.319Z"
+    },
+    {
+      "_id": "ddf56c079ba24e59225badec",
+      "incidentId": "CS-2026-1006",
+      "title": "Sparking Transformer Fuse on Utility Pole",
+      "category": "Electrical Hazard",
+      "description": "Loud popping and electrical discharge on pole-mounted 25kVA transformer unit.",
+      "urgency": "Critical",
+      "address": "410 Castro Street",
+      "landmark": "Corner of 17th St",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.435,
+          37.76
+        ]
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=800&q=80"
+      ],
+      "reporter": "5ded2b856bf009175f6bba08",
+      "reporterName": "Sarah Jenkins (Citizen)",
+      "assignedCrew": "7dd441de0c725c69dc49ba5a",
+      "status": "Resolved",
+      "rejectionReason": "",
+      "verification": {
+        "verifiedAt": "2026-10-16T23:43:46.308Z",
+        "verifiedBy": "7dd441de0c725c69dc49ba5a",
+        "notes": "Inspected pole #EL-490. Primary fuse cutout porcelain insulator was cracked.",
+        "confirmedHazardLevel": "Critical",
+        "onSitePhotos": []
+      },
+      "resolution": {
+        "resolvedAt": "2026-10-17T03:43:46.308Z",
+        "resolvedBy": "7dd441de0c725c69dc49ba5a",
+        "notes": "De-energized line segment. Replaced defective 25kVA fuse cutout with heavy-duty polymer unit. Re-tested phase continuity and restored service. Area verified safe for pedestrian traffic.",
+        "resolutionPhotos": [
+          "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80"
+        ]
+      },
+      "createdAt": "2026-10-17T07:43:46.317Z",
+      "updatedAt": "2026-10-17T07:43:46.317Z"
+    },
+    {
+      "_id": "71ce789b7fa0f61c41156df0",
+      "incidentId": "CS-2026-1005",
+      "title": "Street Grate Sewage Seepage and Odor Concern",
+      "category": "Sewage Overflow",
+      "description": "Foul-smelling effluent bubbling up from underground collector chamber during heavy shower. Runoff approaching neighborhood stormwater drain.",
+      "urgency": "Low",
+      "address": "88 Valencia Way",
+      "landmark": "Next to Valencia Community Garden",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.423,
+          37.772
+        ]
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?auto=format&fit=crop&w=800&q=80"
+      ],
+      "reporter": "5ded2b856bf009175f6bba08",
+      "reporterName": "Sarah Jenkins (Citizen)",
+      "assignedCrew": null,
+      "status": "Reported",
+      "rejectionReason": "",
+      "verification": {
+        "verifiedAt": null,
+        "verifiedBy": null,
+        "notes": "",
+        "confirmedHazardLevel": "",
+        "onSitePhotos": []
+      },
+      "resolution": {
+        "resolvedAt": null,
+        "resolvedBy": null,
+        "notes": "",
+        "resolutionPhotos": []
+      },
+      "createdAt": "2026-10-17T07:43:46.316Z",
+      "updatedAt": "2026-10-17T07:43:46.316Z"
+    },
+    {
+      "_id": "db5f273fbe8191691ec6893e",
+      "incidentId": "CS-2026-1004",
+      "title": "Dangerous 2-Foot Asphalt Pothole Damaging Vehicle Suspensions",
+      "category": "Road Damage",
+      "description": "Consecutive freeze-thaw cycles created an aggressive crater across northbound lane. Multiple cyclists and motor vehicles reported tire ruptures.",
+      "urgency": "Medium",
+      "address": "350 Bay Street, Northbound Lane",
+      "landmark": "Near Pier 39 intersection",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.416,
+          37.778
+        ]
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80"
+      ],
+      "reporter": "5ded2b856bf009175f6bba08",
+      "reporterName": "Sarah Jenkins (Citizen)",
+      "assignedCrew": null,
+      "status": "Acknowledged",
+      "rejectionReason": "",
+      "verification": {
+        "verifiedAt": null,
+        "verifiedBy": null,
+        "notes": "",
+        "confirmedHazardLevel": "",
+        "onSitePhotos": []
+      },
+      "resolution": {
+        "resolvedAt": null,
+        "resolvedBy": null,
+        "notes": "",
+        "resolutionPhotos": []
+      },
+      "createdAt": "2026-10-17T07:43:46.314Z",
+      "updatedAt": "2026-10-17T07:43:46.314Z"
+    },
+    {
+      "_id": "14a653c3e3df658d56b11010",
+      "incidentId": "CS-2026-1003",
+      "title": "Major Water Main Pipe Fracture Flooding Intersection",
+      "category": "Water Leakage",
+      "description": "Pressurized municipal supply line rupture is discharging thousands of gallons onto roadway. Pavement buckling and visible erosion of sub-base under the east lane.",
+      "urgency": "Medium",
+      "address": "1200 Mission Boulevard",
+      "landmark": "In front of Central Public Library",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.4215,
+          37.7735
+        ]
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1541888946425-d0fbb186f5f8?auto=format&fit=crop&w=800&q=80"
+      ],
+      "reporter": "5ded2b856bf009175f6bba08",
+      "reporterName": "Sarah Jenkins (Citizen)",
+      "assignedCrew": "1438faa54745260a4e780540",
+      "status": "Assigned",
+      "rejectionReason": "",
+      "verification": {
+        "verifiedAt": null,
+        "verifiedBy": null,
+        "notes": "",
+        "confirmedHazardLevel": "",
+        "onSitePhotos": []
+      },
+      "resolution": {
+        "resolvedAt": null,
+        "resolvedBy": null,
+        "notes": "",
+        "resolutionPhotos": []
+      },
+      "createdAt": "2026-10-17T07:43:46.312Z",
+      "updatedAt": "2026-10-17T07:43:46.312Z"
+    },
+    {
+      "_id": "2cf2371ba4304db305891e18",
+      "incidentId": "CS-2026-1002",
+      "title": "Uncovered Deep Stormwater Drain Manhole Near Transit Hub",
+      "category": "Open Manhole",
+      "description": "Heavy iron circular manhole cover missing following street sweeping operations. Over 8 feet deep pit is currently unbarricaded in a high-density commuter footway.",
+      "urgency": "Critical",
+      "address": "Market St & 5th Avenue Transit Plaza",
+      "landmark": "Immediately adjacent to Subway North Entrance",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.4172,
+          37.7765
+        ]
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=800&q=80"
+      ],
+      "reporter": "5ded2b856bf009175f6bba08",
+      "reporterName": "Sarah Jenkins (Citizen)",
+      "assignedCrew": "1438faa54745260a4e780540",
+      "status": "In Progress",
+      "rejectionReason": "",
+      "verification": {
+        "verifiedAt": null,
+        "verifiedBy": null,
+        "notes": "",
+        "confirmedHazardLevel": "",
+        "onSitePhotos": []
+      },
+      "resolution": {
+        "resolvedAt": null,
+        "resolvedBy": null,
+        "notes": "",
+        "resolutionPhotos": []
+      },
+      "createdAt": "2026-10-17T07:43:46.310Z",
+      "updatedAt": "2026-10-17T07:43:46.310Z"
+    },
+    {
+      "_id": "b117e0c60d631083c4ab196a",
+      "incidentId": "CS-2026-1001",
+      "title": "Live High-Voltage Cable Hanging Over School Crosswalk",
+      "category": "Electrical Hazard",
+      "description": "Severe storm damaged wooden utility pole causing overhead primary conductor to break and sag ~5 feet above pedestrian crosswalk. Active arcing observed when wind gusts blow cable against metal fence.",
+      "urgency": "Critical",
+      "address": "742 Evergreen Terrace, near Lincoln Elementary",
+      "landmark": "Crosswalk opposite Elm Street Gate",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -122.4188,
+          37.7752
+        ]
+      },
+      "photos": [
+        "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=800&q=80"
+      ],
+      "reporter": "5ded2b856bf009175f6bba08",
+      "reporterName": "Sarah Jenkins (Citizen)",
+      "assignedCrew": null,
+      "status": "Reported",
+      "rejectionReason": "",
+      "verification": {
+        "verifiedAt": null,
+        "verifiedBy": null,
+        "notes": "",
+        "confirmedHazardLevel": "",
+        "onSitePhotos": []
+      },
+      "resolution": {
+        "resolvedAt": null,
+        "resolvedBy": null,
+        "notes": "",
+        "resolutionPhotos": []
+      },
+      "createdAt": "2026-10-17T07:43:46.308Z",
+      "updatedAt": "2026-10-17T07:43:46.308Z"
+    }
+  ],
+  "incidentHistories": [
+    {
+      "_id": "c2a19debe24ff1375239909c",
+      "incident": "f94d40f695e0e9577f618d1e",
+      "action": "REJECTED",
+      "previousStatus": "Reported",
+      "newStatus": "Rejected",
+      "actor": "821497655e6d3b7d9d21d723",
+      "actorName": "Director Elena Vance (Municipal Ops)",
+      "actorRole": "admin",
+      "notes": "Rejection notice: Private property defect outside municipal public right-of-way jurisdiction. Homeowner referred to private contractors.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.321Z"
+    },
+    {
+      "_id": "d1ef5b2be4df89283f9d0fbc",
+      "incident": "f94d40f695e0e9577f618d1e",
+      "action": "REPORTED",
+      "previousStatus": "",
+      "newStatus": "Reported",
+      "actor": "5ded2b856bf009175f6bba08",
+      "actorName": "Sarah Jenkins (Citizen)",
+      "actorRole": "citizen",
+      "notes": "Initial hazard logged with coordinates and evidence.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.320Z"
+    },
+    {
+      "_id": "36fc901a655048cd66fcf8c4",
+      "incident": "ddf56c079ba24e59225badec",
+      "action": "RESOLVED",
+      "previousStatus": "Verified",
+      "newStatus": "Resolved",
+      "actor": "7dd441de0c725c69dc49ba5a",
+      "actorName": "Carlos Rivera (Electrical Safety)",
+      "actorRole": "crew",
+      "notes": "De-energized line segment. Replaced defective 25kVA fuse cutout with heavy-duty polymer unit. Re-tested phase continuity and restored service. Area verified safe for pedestrian traffic.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.319Z"
+    },
+    {
+      "_id": "0e5dc2c27dad135a2be617a8",
+      "incident": "ddf56c079ba24e59225badec",
+      "action": "VERIFIED",
+      "previousStatus": "In Progress",
+      "newStatus": "Verified",
+      "actor": "7dd441de0c725c69dc49ba5a",
+      "actorName": "Carlos Rivera (Electrical Safety)",
+      "actorRole": "crew",
+      "notes": "Inspected pole #EL-490. Primary fuse cutout porcelain insulator was cracked.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.318Z"
+    },
+    {
+      "_id": "97b0ad40e3129adf623c6609",
+      "incident": "ddf56c079ba24e59225badec",
+      "action": "REPORTED",
+      "previousStatus": "",
+      "newStatus": "Reported",
+      "actor": "5ded2b856bf009175f6bba08",
+      "actorName": "Sarah Jenkins (Citizen)",
+      "actorRole": "citizen",
+      "notes": "Initial hazard logged with coordinates and evidence.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.317Z"
+    },
+    {
+      "_id": "249e52316f6e560921a20c9c",
+      "incident": "71ce789b7fa0f61c41156df0",
+      "action": "REPORTED",
+      "previousStatus": "",
+      "newStatus": "Reported",
+      "actor": "5ded2b856bf009175f6bba08",
+      "actorName": "Sarah Jenkins (Citizen)",
+      "actorRole": "citizen",
+      "notes": "Initial hazard logged with coordinates and evidence.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.316Z"
+    },
+    {
+      "_id": "17ed3c019f32c5e34fb0fafc",
+      "incident": "db5f273fbe8191691ec6893e",
+      "action": "REPORTED",
+      "previousStatus": "",
+      "newStatus": "Reported",
+      "actor": "5ded2b856bf009175f6bba08",
+      "actorName": "Sarah Jenkins (Citizen)",
+      "actorRole": "citizen",
+      "notes": "Initial hazard logged with coordinates and evidence.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.315Z"
+    },
+    {
+      "_id": "cd8296603e0ba4785751c37c",
+      "incident": "14a653c3e3df658d56b11010",
+      "action": "ASSIGNED",
+      "previousStatus": "Reported",
+      "newStatus": "Assigned",
+      "actor": "821497655e6d3b7d9d21d723",
+      "actorName": "Director Elena Vance (Municipal Ops)",
+      "actorRole": "admin",
+      "notes": "Assigned to specialized field crew.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.313Z"
+    },
+    {
+      "_id": "8379fcd57f5a2748d4ca010e",
+      "incident": "14a653c3e3df658d56b11010",
+      "action": "REPORTED",
+      "previousStatus": "",
+      "newStatus": "Reported",
+      "actor": "5ded2b856bf009175f6bba08",
+      "actorName": "Sarah Jenkins (Citizen)",
+      "actorRole": "citizen",
+      "notes": "Initial hazard logged with coordinates and evidence.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.313Z"
+    },
+    {
+      "_id": "62857de9f181dba8c0850ba3",
+      "incident": "2cf2371ba4304db305891e18",
+      "action": "STATUS_CHANGE",
+      "previousStatus": "Assigned",
+      "newStatus": "In Progress",
+      "actor": "1438faa54745260a4e780540",
+      "actorName": "Marcus Thorne (Roads & Water)",
+      "actorRole": "crew",
+      "notes": "Crew mobilized on-site with emergency response equipment.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.311Z"
+    },
+    {
+      "_id": "e85b7eb71f8b269724cfe51d",
+      "incident": "2cf2371ba4304db305891e18",
+      "action": "ASSIGNED",
+      "previousStatus": "Reported",
+      "newStatus": "Assigned",
+      "actor": "821497655e6d3b7d9d21d723",
+      "actorName": "Director Elena Vance (Municipal Ops)",
+      "actorRole": "admin",
+      "notes": "Assigned to specialized field crew.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.311Z"
+    },
+    {
+      "_id": "576c4a0768f8d9b2530fc36a",
+      "incident": "2cf2371ba4304db305891e18",
+      "action": "REPORTED",
+      "previousStatus": "",
+      "newStatus": "Reported",
+      "actor": "5ded2b856bf009175f6bba08",
+      "actorName": "Sarah Jenkins (Citizen)",
+      "actorRole": "citizen",
+      "notes": "Initial hazard logged with coordinates and evidence.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.310Z"
+    },
+    {
+      "_id": "18b202113d5820c1f57fc0b1",
+      "incident": "b117e0c60d631083c4ab196a",
+      "action": "REPORTED",
+      "previousStatus": "",
+      "newStatus": "Reported",
+      "actor": "5ded2b856bf009175f6bba08",
+      "actorName": "Sarah Jenkins (Citizen)",
+      "actorRole": "citizen",
+      "notes": "Initial hazard logged with coordinates and evidence.",
+      "metadata": {},
+      "timestamp": "2026-10-17T07:43:46.309Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "47d64f438ad6b07d533b60eb",
+      "recipient": "821497655e6d3b7d9d21d723",
+      "incident": null,
+      "title": "Critical Hazard Alert",
+      "message": "Immediate priority: CS-2026-1001 Live High-Voltage Cable requires crew assignment.",
+      "type": "ALERT",
+      "isRead": false,
+      "createdAt": "2026-10-17T07:43:46.322Z"
+    },
+    {
+      "_id": "f54d9492a82e930b42225441",
+      "recipient": "7dd441de0c725c69dc49ba5a",
+      "incident": null,
+      "title": "Resolution Confirmed",
+      "message": "Incident CS-2026-1006 has been archived as resolved. SLA met in 4.2h.",
+      "type": "RESOLUTION",
+      "isRead": false,
+      "createdAt": "2026-10-17T07:43:46.322Z"
+    },
+    {
+      "_id": "e727013f365351b1bd877f0a",
+      "recipient": "5ded2b856bf009175f6bba08",
+      "incident": null,
+      "title": "Report Acknowledged",
+      "message": "Your report CS-2026-1002 for Uncovered Deep Stormwater Drain has been dispatched to field crews.",
+      "type": "STATUS_CHANGE",
+      "isRead": false,
+      "createdAt": "2026-10-17T07:43:46.321Z"
+    }
+  ]
+}

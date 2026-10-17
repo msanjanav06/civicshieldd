@@ -1,0 +1,20 @@
+{
+  "name": "civicshieldd",
+  "version": "1.0.0",
+  "description": "CivicShield Municipal Infrastructure Hazard Platform",
+  "scripts": {
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "build:client": "cd client && npm run build"
+  },
+  "keywords": [
+    "civic-tech",
+    "municipal",
+    "dispatch",
+    "infrastructure",
+    "safety"
+  ],
+  "author": "CivicShield Engineering",
+  "license": "ISC"
+}
